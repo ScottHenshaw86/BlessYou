@@ -25,14 +25,16 @@
             -moz-appearance: none;
         }
 
-        button:hover,
-        button:focus {
-            /* background: #0053ba; */
+        .button-bless:hover {
+            background: #158A31;
+        }
+
+        .button-thanks:hover {
+            background: #328AA6;
         }
 
         button:focus {
-            outline: 1px solid #fff;
-            outline-offset: -4px;
+            outline: none;
         }
 
         button:active {
@@ -60,7 +62,7 @@
 <body>
     <audio id="bless" src="./BlessYou.m4a" preload="auto"></audio>
     <audio id="thank" src="./ThankYou.m4a" preload="auto"></audio>
-    <button onclick="document.getElementById('bless').play();" class="button-bless pure-button">Bless You!</button>
-    <button onclick="document.getElementById('thank').play();" class="button-thanks pure-button">Thank You</button>
+    <button onclick="document.getElementById('bless').play();" class="button-bless">Bless You!</button>
+    <button onclick="document.getElementById('thank').play();" class="button-thanks">Thank You</button>
 </body>
 </html>
