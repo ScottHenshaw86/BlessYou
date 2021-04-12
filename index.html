@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        button {
+            display: inline-block;
+            border: none;
+            padding: 1rem 2rem;
+            margin: 0;
+            text-decoration: none;
+            background: #0069ed;
+            color: #ffffff;
+            font-family: sans-serif;
+            font-size: 1rem;
+            cursor: pointer;
+            text-align: center;
+            transition: background 250ms ease-in-out, 
+                        transform 150ms ease;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+
+        button:hover,
+        button:focus {
+            /* background: #0053ba; */
+        }
+
+        button:focus {
+            outline: 1px solid #fff;
+            outline-offset: -4px;
+        }
+
+        button:active {
+            transform: scale(0.99);
+        }
+
+        .button-bless,
+        .button-thanks {
+            color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-bless {
+            background: rgb(28, 184, 65);
+            /* this is a green */
+        }
+
+        .button-thanks {
+            background: rgb(66, 184, 221);
+            /* this is a light blue */
+        }
+    </style>
+</head>
+<body>
+    <audio id="bless" src="./BlessYou.m4a" preload="auto"></audio>
+    <audio id="thank" src="./ThankYou.m4a" preload="auto"></audio>
+    <button onclick="document.getElementById('bless').play();" class="button-bless pure-button">Bless You!</button>
+    <button onclick="document.getElementById('thank').play();" class="button-thanks pure-button">Thank You</button>
+</body>
+</html>

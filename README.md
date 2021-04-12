@@ -1,2 +1,0 @@
-# BlessYou
-Bless you button
